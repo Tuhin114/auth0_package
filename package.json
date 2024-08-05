@@ -1,0 +1,20 @@
+{
+  "name": "auth0_package",
+  "version": "1.1.0",
+  "main": "index.js",
+  "bin": {
+    "auth-package": "bin/auth-package.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "postinstall": "echo 'Please set up your .env file with MONGO_URI and JWT_SECRET'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tuhin114/auth0_package.git"
+  },
+  "author": "Tuhin Podddar",
+  "dependencies": {
+    "fs-extra": "^11.2.0"
+  }
+}
