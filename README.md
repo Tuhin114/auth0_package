@@ -1,17 +1,17 @@
-# auth-package
+# auth0_package
 
-The **auth-package** is an npm package designed to simplify the setup of authentication routes (login, signup, and logout) in your project. After installation, it creates a separate folder in your project root directory and makes necessary changes to index.js, allowing you to test these routes directly without additional coding.
+The **auth0_package** is an npm package designed to simplify the setup of authentication routes (login, signup, and logout) in your project. After installation, it creates a separate folder in your project root directory and makes necessary changes to index.js, allowing you to test these routes directly without additional coding.
 
 # Process
 
-## Important Notes :
-
-- This npm package is only designed to use with **react.js + javascript**.
+## Important Notes : 
+- This npm package is only designed to use with **react.js + javascript**. 
 - In future versions it will be available for all popular tech stack.
 
 ## Quick Installation : 
 
-- `npx auth-package`
+- `npm i auth0_package`
+- `npx auth0_package`
 - `npm install express mongoose jsonwebtoken bcryptjs dotenv cors cookie-parser`
 - Go to `.env` file in your project(which is generated from the auth-package) and the you have to give `MONGO_URI` and `JWT_SECRET`.
 - All done 👍. Now run your server.
@@ -22,13 +22,14 @@ The **auth-package** is an npm package designed to simplify the setup of authent
 - It is advised not to create any files for your project initially after `npm init -y`. This npm package automatically creates an index.js file to run the auth routes, so installing the package first is recommended.
 - installation cmd :
 ```bash
-  npx auth-package
+  npx auth0_package
 ```
 
 - Now after successful installation of the package you have to install some packages to run your project.
 ```bash
   npm install express mongoose jsonwebtoken bcryptjs dotenv cors cookie-parser nodemon
 ```
+
 
 - Why these packages are necessary?
 
@@ -56,7 +57,7 @@ The **auth-package** is an npm package designed to simplify the setup of authent
 ## After completing the all installation
 - Your folder structure will look like this.
 
-![img2](/assets/img2.png)
+![img2](https://github.com/Tuhin114/auth0_package/blob/main/assets/img2.png?raw=true)
 
 **`config`** : It is basically for connecting mongoDB database.
 
