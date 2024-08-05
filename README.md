@@ -22,6 +22,7 @@ The **auth0_package** is an npm package designed to simplify the setup of authen
 - It is advised not to create any files for your project initially after `npm init -y`. This npm package automatically creates an index.js file to run the auth routes, so installing the package first is recommended.
 - installation cmd :
 ```bash
+  npm i auth0_package
   npx auth0_package
 ```
 
@@ -52,6 +53,15 @@ The **auth0_package** is an npm package designed to simplify the setup of authen
 - Althogh `nodemon` is not required to run this package but it makes your experiance better.
 
 - Change the `package.json` file to use the nodemon.
+
+```bash
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+  },
+  "type": "module",
+```
+
 ![img1](https://github.com/Tuhin114/auth0_package/blob/main/assets/img1.png?raw=true)
 
 ## After completing the all installation
@@ -69,9 +79,9 @@ The **auth0_package** is an npm package designed to simplify the setup of authen
 | `Login`      | **`Required`** `username`, `password`|
 | `Logout`      | Nothing Required|
 
-- You can modify all the functions...all codes are available. You can add other variables or parameters. Accordingly you have to change the userModel and function code.
+- You can modify all the functions as all the code is available. Add variables or parameters as needed, and update the user model and function code accordingly.
 
-- **In updated versions of this package, we will try to give customization of this parameters.**
+- **In updated versions of this package, we will try to give customizations of this parameters.**
 
 
 **`middleware`** :The protectRoute middleware function verifies the JWT token from cookies, retrieves the corresponding user from the database, and attaches the user object to the request for protected routes. 
@@ -82,15 +92,15 @@ The **auth0_package** is an npm package designed to simplify the setup of authen
 | `username`      | **`Required`** String|
 | `fullName`      | **`Required`** String|
 | `password`      | **`Required`** String **min length 6**|
-| `email`      | **`Required`** String|
+| `email`         | **`Required`** String|
 
 
-**`routes`** :The code sets up an Express router with routes for <br/> user authentication (/signup, /login, /logout) and a protected route (/me) using the protectRoute middleware to retrieve the authenticated user's details(This /me is in development mode..so you will not get it in your package..but you can add it my yourself..protectRoute middleware is available for your use.).
+**`routes`** :The code sets up an Express router with routes for user authentication (/signup, /login, /logout) and a protected route (/me) using the protectRoute middleware to retrieve the authenticated user's details(This /me is in development mode..so you will not get it in your package..but you can add it my yourself..protectRoute middleware is available for your use.).
 
 | **Routes**     | **Method**                                                                                             |
 |-----------------|-------------------------------------------------------------------------------------------------------------|
 | `/signup`      | Post|
-| `/login`      | Post|
+| `/login`       | Post|
 | `/logout`      | Post|
 
 
@@ -109,4 +119,4 @@ The **auth0_package** is an npm package designed to simplify the setup of authen
 
 ## For demo you can see this Video
 
-![Video](/assets/Video.mp4)
+![Video](https://github.com/Tuhin114/auth0_package/blob/main/assets/video.mp4?raw=true)
