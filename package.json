@@ -5,6 +5,10 @@
   "bin": {
     "auth-package": "bin/auth-package.js"
   },
+  "keywords": [
+    "authentication",
+    "no-code"
+  ],
   "scripts": {
     "start": "node index.js",
     "postinstall": "echo 'Please set up your .env file with MONGO_URI and JWT_SECRET'"
