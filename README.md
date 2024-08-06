@@ -119,4 +119,8 @@ The **auth0_package** is an npm package designed to simplify the setup of authen
 
 ## For demo you can see this Video
 
-[![Watch the video](https://img.youtube.com/vi/your_video_id/maxresdefault.jpg)](https://drive.google.com/file/d/1jVDjMoHkkbLzPYuKxIyVnbZTUQLuX9Bs/view?usp=sharing)
+[![Watch the video](https://drive.google.com/file/d/1jaJ-6yBY-SlTsnyYdHlSym_wXqRiCfHt/view?usp=sharing)](https://drive.google.com/file/d/1jVDjMoHkkbLzPYuKxIyVnbZTUQLuX9Bs/view?usp=sharing)
+
+## Created by :
+
+### Tuhin Poddar
