@@ -1,6 +1,6 @@
 # auth0_package
 
-The **auth0_package** is an npm package designed to simplify the setup of authentication routes (login, signup, and logout) in your project. After installation, it creates a separate folder in your project root directory and makes necessary changes to index.js, allowing you to test these routes directly without additional coding.
+The **auth0_package** is a npm package designed to simplify the setup of authentication routes (login, signup, and logout) in your project. After installation, it creates a separate folder in your project root directory and makes necessary changes to index.js, allowing you to test these routes directly without additional coding.
 
 # Process
 
@@ -13,7 +13,7 @@ The **auth0_package** is an npm package designed to simplify the setup of authen
 - `npm i auth0_package`
 - `npx auth0_package`
 - `npm install express mongoose jsonwebtoken bcryptjs dotenv cors cookie-parser`
-- Go to `.env` file in your project(which is generated from the auth-package) and the you have to give `MONGO_URI` and `JWT_SECRET`.
+- Go to `.env` file in your project(which is generated from the auth-package) and here you have to give `MONGO_URI` and `JWT_SECRET`.
 - All done 👍. Now run your server.
 
 ## Docs :
@@ -106,7 +106,7 @@ The **auth0_package** is an npm package designed to simplify the setup of authen
 
 **`utils`** :  The generateTokenAndSetCookie function creates a JWT for a given user ID, sets it as an HTTP-only, same-site cookie with a 15-day expiration on the response, enhancing security against XSS and CSRF attacks. 
 
-- You will also get a .env file (**You should use the the .env file which is generated from the auth-package not you previous .env file**)
+- You will also get a .env file (**You should use the the .env file which is generated from the auth-package not you previous .env file**).
 
 | **env**     | **Description**                                                                                             |
 |-----------------|-------------------------------------------------------------------------------------------------------------|
@@ -115,7 +115,7 @@ The **auth0_package** is an npm package designed to simplify the setup of authen
 | `NODE_ENV`      | By default Development|
 | `PORT`      | You can change you server port or by default 3000|
 
-. Now all is set you can run your server by `npm run dev` and test your server by Postman or other applications.
+Now all is set you can run your server by `npm run dev` and test your server by Postman or other applications.
 
 ## For demo you can see this Video
 
